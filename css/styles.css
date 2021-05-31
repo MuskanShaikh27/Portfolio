@@ -182,7 +182,27 @@ top:4px;
 }
 
 }
+@media only screen and (max-width: 530px){
+.dynamic-txts{
+  margin-left: 0;
+  padding:0;
+}
+.wrapper{
+  flex-direction: column;
+}
+.wrapper .static-txt{
+  font-size: 50px;
+}
 
+.dynamic-txts li{
+  font-size: 50px;
+}
+.dynamic-txts li span::after{
+position: absolute;
+top:4px;
+
+}
+}
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 792px){
